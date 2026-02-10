@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sinchana P - Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --bg: #f4f6f8;
+      --text: #222;
+      --card: #ffffff;
+      --accent: #4f46e5;
+      --muted: #555;
+    }
+
+    body.dark {
+      --bg: #0f172a;
+      --text: #e5e7eb;
+      --card: #1e293b;
+      --accent: #38bdf8;
+      --muted: #9ca3af;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: var(--card);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: var(--accent);
+    }
+
+    .toggle {
+      cursor: pointer;
+      padding: 8px 14px;
+      border-radius: 20px;
+      background: var(--accent);
+      color: white;
+      border: none;
+    }
+
+    section {
+      margin-top: 25px;
+    }
+
+    h2 {
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    .info {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .skills span {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 5px 10px;
+      margin: 5px;
+      border-radius: 15px;
+      font-size: 13px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    /* Print friendly */
+    @media print {
+      .toggle {
+        display: none;
+      }
+      body {
+        background: white;
+      }
+      .container {
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Sinchana P</h1>
+        <p class="info">
+          📍 Bengaluru | 📞 +91 6362096135 <br>
+          ✉️ <a href="mailto:sinchanapsinchu2021@gmail.com">sinchanapsinchu2021@gmail.com</a> |
+          <a href="https://www.linkedin.com/in/sinchana-p-9a38a2308" target="_blank">LinkedIn</a>
+        </p>
+      </div>
+      <button class="toggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    </header>
+
+    <section>
+      <h2>About Me</h2>
+      <p>
+        Enthusiastic Computer Science Engineering student with a keen interest in
+        applying technology to solve practical problems. Seeking opportunities to
+        enhance my skills in software development and modern technologies.
+      </p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p><strong>Bachelor of Engineering – Computer Science</strong> (2022–2026)</p>
+      <p>Vemana Institute of Technology, Bengaluru</p>
+      <p class="info">
+        Relevant Coursework: Data Structures, Algorithms, DBMS, OS,
+        Computer Networks, Software Engineering, Web Development
+      </p>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="skills">
+        <span>Python</span>
+        <span>SQL</span>
+        <span>C++</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Flask</span>
+        <span>Django</span>
+        <span>REST APIs</span>
+        <span>NumPy</span>
+        <span>Pandas</span>
+        <span>Scikit-learn</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <p><strong>Suprmentr Technologies Pvt Ltd</strong> (Ongoing)</p>
+      <ul>
+        <li>Developed responsive web interfaces using HTML, CSS, and JavaScript</li>
+        <li>Assisted in backend integration and database connectivity</li>
+        <li>Worked on frontend, backend logic, and database fundamentals</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Fruit IntelliRipen System</strong> – Sensor-based ripeness prediction using Python</li>
+        <li><strong>Blockchain Healthcare Records</strong> – Secure record management using Ethereum & IPFS</li>
+        <li><strong>Movie Review Sentiment Analysis</strong> – NLP-based ML model for sentiment classification</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <ul>
+        <li>Data Science with Python</li>
+        <li>Database Management Systems</li>
+        <li>Data Analytics with Python</li>
+        <li>Generative AI Foundations</li>
+        <li>Python Programming</li>
+      </ul>
+    </section>
+  </div>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark");
+    }
+  </script>
+</body>
+</html>
